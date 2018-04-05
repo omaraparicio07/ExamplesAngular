@@ -1,0 +1,21 @@
+<!-- Formulario para Agregar personas al Array -->
+<div class="container"> 
+<form (submit)="cSubmit()" class="form">
+   <h3>Formulario para Agregar Persona</h3>
+   <br>
+   <div   class="form-group">
+   <!-- [(ngModel)] para un binding bi-direccional que toma el name del elemento para hacer la asociacion -->
+   <label for="" class="form-label">Nombre </label>
+   <input type="text" class="form-control col-md-8" placeholder="Nombre Completo" title="Nombre Completo"  [(ngModel)]="nvaPersona.nombre" name="nombre">
+   <!-- <br> -->
+   <label for="" class="form-label">Edad</label>
+   <input type="number" class="form-control col-md-4" placeholder="Edad" title="Edad en años" min="0" max="150"  [(ngModel)]="nvaPersona.edad" name="edad">
+   <!-- <br> -->
+   <label for="" class="form-label">Frase Caracteristicas</label>
+   <input type="text" class="form-control col-md-8" placeholder="Frase:" title="Frase Caracteristica"  [(ngModel)]="nvaPersona.frase" name="frase">
+  </div>
+   <!-- <input type="text" placeholder="direccion"  [(ngModel)]="nvaPersona.direccion.id" name="nombre">  -->
+   <input type="submit" class="form-control col-md-2 btn btn-success" value="Agregar"  >
+ 
+  </form>
+</div>

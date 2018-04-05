@@ -1,0 +1,5 @@
+<app-formulario-persona (outPerson)="agregarPersona($event)">
+</app-formulario-persona>
+
+<app-tarjetaPresentacion *ngFor="let item of lPersonas" [inPersona]="item">
+</app-tarjetaPresentacion>
