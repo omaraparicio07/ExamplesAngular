@@ -1,0 +1,28 @@
+<div class="container">
+  <button class="btn btn-success " (click)="verTabla()" style="margin-bottom:1em;align-items: center">Ver Tabla</button>
+</div>
+<div class="container" >
+  <table  class=" table "> 
+ 
+    <thead>
+        <tr >
+          <th scope="col">Id</th>
+          <th scope="col">User</th>
+          <th scope="col">TITULO</th>
+          <th scope="col">CONTENIDO</th>
+          <th scope="col">Acciones</th>
+        </tr>  
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let post of posts" >
+        <td scope="row">  {{  post.id }} </td>
+        <td >  {{ post.userId}} </td>
+        <td >  {{post.title}}  </td>
+        <td >  {{post.body}} </td>
+        <td > <button type="button" class="btn btn-primary" (click)="onPostSelected(post.id)">Mostrar Comentarios</button> </td>
+      </tr>
+    </tbody>
+
+</table>
+</div>
