@@ -1,9 +1,9 @@
 //Modulos
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';//Modulo de Formularios
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';//Modulo de Formularios y formularios reactivos
 import { HttpClientModule } from '@angular/common/http';//Modulo Http para consultas
-import { ReactiveFormsModule } from "@angular/forms";
+
 
 //Routes -- rutas para navegar en la aplicacion
 import { AppRoutingModule } from './/app-routing.module';

@@ -7,6 +7,7 @@ import { EmpresaComponent } from "./components/empresa/empresa.component";
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TablaPostComponent } from './components/tabla-post/tabla-post.component';
+import { FormularioDireccionComponent } from './components/formulario-direccion/formulario-direccion.component';
 
 
 //Array para definir las rutas de la aplicacion
@@ -14,6 +15,7 @@ const ROUTES: Routes = [
   { path: 'Ejercicio1', component: FooterComponent },
   { path: 'Ejercicio2', component: EmpresaComponent },
   { path: 'Ejercicio3', component: TablaPostComponent },
+  // { path: 'Ejercicio4', component: FooterComponent  },
   { path: ' ', redirectTo: '/', pathMatch: 'full' }
 ];
 

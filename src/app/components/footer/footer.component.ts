@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { Direccion } from '../../entidades/direccion';
 
 @Component({
   selector: 'app-footer',
@@ -11,4 +12,11 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  saludo(dir:Direccion[]):void{
+    console.log("repecion desde FormReactivo");
+    console.log(dir);
+    let dirA:Direccion[]=dir;
+    
+    
+  }
 }
