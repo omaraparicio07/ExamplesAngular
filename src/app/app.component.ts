@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Direccion } from './entidades/direccion';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,12 @@ export class AppComponent {
   // console.log("Recepcion de FormReactive");      
   // }
 
+  saludo(dir:Direccion[]):void{
+    console.log("repecion desde FormReactivo");
+    console.log(dir);
+    let dirA:Direccion[]=dir;
+    
+    
+  }
+  
 }

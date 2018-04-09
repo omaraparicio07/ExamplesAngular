@@ -24,6 +24,7 @@ import { FormularioPersonaComponent } from './components/formulario-persona/form
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TablaPostComponent } from './components/tabla-post/tabla-post.component';
 import { FormularioDireccionComponent } from './components/formulario-direccion/formulario-direccion.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { FormularioDireccionComponent } from './components/formulario-direccion/
     NavbarComponent,
     TablaPostComponent,
     FormularioDireccionComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
