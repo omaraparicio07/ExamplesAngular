@@ -15,7 +15,8 @@ import { HomeComponent } from './components/home/home.component';
 const ROUTES: Routes = [
   { path: 'Ejercicio1', component: HomeComponent },
   { path: 'Ejercicio2', component: EmpresaComponent },
-  { path: 'Ejercicio3', component: TablaPostComponent },
+  { path: 'Ejercicio3', component: TablaPostComponent ,
+                        children : [  ]},
   { path: 'Ejercicio4', component: FormularioDireccionComponent  },
   { path: ' ', redirectTo: '/', pathMatch: 'full' }
 ];

@@ -13,7 +13,7 @@ import { CommentService } from '../../services/comment.service';
 export class TablaPostComponent implements OnInit {
 
   posts:Post[];
-  comments:Comment[];
+  commentsA:Comment[];
 
   constructor(
     //Inyeccion de Dependencias
@@ -38,10 +38,11 @@ export class TablaPostComponent implements OnInit {
   }
   //Consulta de comentarios a traves del ID del Post
   onPostSelected(idComment){
+    let commentArray:Comment[];
     this.commentPost.getList(idComment).subscribe(
       (data)=>{
         console.log(data);
-        // this.comments=data;
+        // this.commentsA=data.values;
         
       },
       (error)=>{
